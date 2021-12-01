@@ -5,7 +5,7 @@ switch(window.location.hostname) {
         APIURL = "http://localhost:3001"
         break;
     case "selfqclient.herokuapp.com":
-        APIURL = "https://selfqserver.herokuapp.com/"
+        APIURL = "https://selfqserver.herokuapp.com"
 }
 
 export default APIURL;
