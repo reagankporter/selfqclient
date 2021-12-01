@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import './auth.css';
+import APIURL from '../../helpers/enviroment';
 
 const Auth = (props) => {
     console.log(props);
@@ -47,8 +48,8 @@ const Auth = (props) => {
         // console.log(login);
 
         let url = login ?
-        `http://localhost:3001/user/login`:
-        `http://localhost:3001/user/register`;
+        `${APIURL}/user/login`:
+        `${APIURL}/user/register`;
         fetch(url,{
             method: 'POST',
             body: JSON.stringify(reqBody),

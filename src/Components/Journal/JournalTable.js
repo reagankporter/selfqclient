@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 import { Table, Button, Card, CardBody, CardTitle, CardSubtitle, CardText, CardGroup } from 'reactstrap';
 import JournalEdit from './JournalEdit';
 import './Feeling.css';
-
+import APIURL from '../../helpers/enviroment';
 
 
 const JournalTable = (props) => {
@@ -13,7 +13,7 @@ const JournalTable = (props) => {
     // const [split, setSplit] = journal.split;
 
     const deleteJournal = (journal) => {
-        fetch(`http://localhost:3001/journal/delete/${journal.id}`, 
+        fetch(`${APIURL}/journal/delete/${journal.id}`, 
         
         {
             method: 'DELETE',
@@ -26,7 +26,7 @@ const JournalTable = (props) => {
             .then(() => props.fetchJournal())
     }
     const fetchJournal = () => {
-        fetch(`http://localhost:3001/journal/mine`, {
+        fetch(`${APIURL}/journal/mine`, {
             method: 'GET',
             headers: new Headers ({
                 'Content-Type': 'application/json',

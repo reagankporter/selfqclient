@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {Button, Form, FormGroup, Label, Input, Modal, ModalHeader, ModalBody} from 'reactstrap';
 import './Feeling.css';
+import APIURL from '../../helpers/enviroment';
 
 const FeelingEdit = (props) => {
     const [editHowFeeling, setEditHowFeeling] = useState(props.FeelingToUpdate.howFeeling);
@@ -10,7 +11,7 @@ const FeelingEdit = (props) => {
     const [modalOpen, setModalOpen] = useState(false);
     const FeelingUpdate = (e, feeling) => {
         
-        fetch(`http://localhost:3001/feeling/update/${props.FeelingToUpdate.id}`, {
+        fetch(`${APIURL}/feeling/update/${props.FeelingToUpdate.id}`, {
             method: 'PUT',
             body: JSON.stringify({
                 feeling: {

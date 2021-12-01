@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import { Form, FormGroup, Label, Input, Button } from 'reactstrap';
 // import APIURL from '../../helpers/enviroment'
-
+import APIURL from '../../helpers/enviroment';
 
 
 const JournalCreate = (props) => {
@@ -13,7 +13,7 @@ const JournalCreate = (props) => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        fetch(`http://localhost:3001/journal/create`, {
+        fetch(`${APIURL}/journal/create`, {
             method: 'POST',
             body: JSON.stringify({
                 journal: {

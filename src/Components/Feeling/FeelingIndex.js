@@ -5,13 +5,14 @@ import FeelingTable from "./FeelingTable";
 import FeelingEdit from "./FeelingEdit";
 import './Feeling.css';
 // import APIURL from '../../helpers/enviroment'
+import APIURL from '../../helpers/enviroment';
 
 const FeelingIndex = (props) => {
     const [feeling, setFeeling] = useState([]);
     const [updateActive, setUpdateActive] = useState(false);
     const [FeelingToUpdate, setFeelingToUpdate] = useState({});
     const fetchFeeling = () => {
-        fetch(`http://localhost:3001/feeling/mine`, {
+        fetch(`${APIURL}/feeling/mine`, {
             method: 'GET',
             headers: new Headers ({
                 'Content-Type': 'application/json',

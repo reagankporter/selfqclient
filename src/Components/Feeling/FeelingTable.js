@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 import { Table, Button, Card, CardBody, CardTitle, CardSubtitle, CardText, CardGroup } from 'reactstrap';
 import FeelingEdit from './FeelingEdit';
 import './Feeling.css';
-
+import APIURL from '../../helpers/enviroment';
 
 const FeelingTable = (props) => {
 
@@ -11,7 +11,7 @@ const FeelingTable = (props) => {
     const [updateActive, setUpdateActive] = useState(false);
 
     const deleteFeeling = (feeling) => {
-        fetch(`http://localhost:3001/feeling/delete/${feeling.id}`, 
+        fetch(`${APIURL}/feeling/delete/${feeling.id}`, 
         
         {
             method: 'DELETE',
@@ -24,7 +24,7 @@ const FeelingTable = (props) => {
             .then(() => props.fetchFeeling())
     }
     const fetchFeeling = () => {
-        fetch(`http://localhost:3001/feeling/mine`, {
+        fetch(`${APIURL}/feeling/mine`, {
             method: 'GET',
             headers: new Headers ({
                 'Content-Type': 'application/json',

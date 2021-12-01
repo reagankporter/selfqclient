@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {Button, Form, FormGroup, Label, Input, Modal, ModalHeader, ModalBody} from 'reactstrap';
 import './Feeling.css';
+import APIURL from '../../helpers/enviroment';
 
 const JournalEdit = (props) => {
     const [editDate, setEditDate] = useState(props.JournalToUpdate.date);
@@ -10,7 +11,7 @@ const JournalEdit = (props) => {
     const [modalOpen, setModalOpen] = useState(false);
     const JournalUpdate = (e, journal) => {
         
-        fetch(`http://localhost:3001/journal/update/${props.JournalToUpdate.id}`, {
+        fetch(`${APIURL}/journal/update/${props.JournalToUpdate.id}`, {
             method: 'PUT',
             body: JSON.stringify({
                 journal: {

@@ -5,13 +5,14 @@ import JournalTable from "./JournalTable";
 import JournalEdit from "./JournalEdit";
 import './Feeling.css';
 // import APIURL from '../../helpers/enviroment'
+import APIURL from '../../helpers/enviroment';
 
 const JournalIndex = (props) => {
     const [journal, setJournal] = useState([]);
     const [updateActive, setUpdateActive] = useState(false);
     const [JournalToUpdate, setJournalToUpdate] = useState({});
     const fetchJournal = () => {
-        fetch(`http://localhost:3001/journal/mine`, {
+        fetch(`${APIURL}/journal/mine`, {
             method: 'GET',
             headers: new Headers ({
                 'Content-Type': 'application/json',
