@@ -78,7 +78,7 @@ const JournalTable = (props) => {
     }
     return (
         <div>
-            <h3>Feeling Log</h3>
+            <h3>Day Log</h3>
             <hr />
             <Table striped>
                 <tbody>
