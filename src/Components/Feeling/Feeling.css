@@ -1,0 +1,57 @@
+.feelingform{
+    height: 560px;
+    width: 800px;
+    display: inline-block;
+    border: 2px solid #ead292;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    color:white;
+
+}
+
+.feelinginput{
+    border-radius: 20px;
+    background-color:#7eb1a8;
+    border: 2px solid #de1b3e;
+    height: 40px;
+    width: 700px;
+    text-indent: 5px;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    font-size: 20px;
+}
+
+.feelingbutton{
+    margin: 1em;
+    border: 2px solid #7eb1a8;
+    height: 50px;
+    width: 200px;
+    background-color: #ead292;
+    color: #7eb1a8;
+    cursor: pointer;
+    border-radius: 20px;
+    font-family: 'Abril Fatface', cursive;
+}
+
+card {
+        margin: 1rem;
+        background: transparent;
+        box-shadow: 2px 4px 25px rgba(0, 0, 0, .1);
+        border: 1px dotted #F6C401;
+        border-radius: 12px;
+        overflow: hidden;
+        transition: all .2s linear;
+        padding: 1rem;
+}
+
+.editinput{
+    border-radius: 20px;
+    background-color:#7eb1a8;
+    border: 2px solid #de1b3e;
+    height: 40px;
+    width: 500px;
+    text-indent: 5px;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    font-size: 20px;
+}

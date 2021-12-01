@@ -1,0 +1,13 @@
+#logout{
+    height: 170px;
+    width: 180px;
+    float:right;
+    right: 50px;
+    top:-20px;
+    position:fixed;
+}
+
+#logout:hover {
+    cursor: pointer;
+}
+

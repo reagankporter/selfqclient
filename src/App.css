@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Damion&family=Dancing+Script:wght@700&family=Julius+Sans+One&family=Nothing+You+Could+Do&family=Sedgwick+Ave&display=swap');
+
+.App-link {
+  color: #3d405b;
+}
+
+.App {
+  text-align: center;
+}
+
+.Navbar {
+  background-color: #263c41;
+
+}
+
+.TitleTwo{
+  color: #7eb1a8;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 70px;
+}
+
+.logoutt{
+  position: fixed;
+  right: 100px;
+  top: 120px;
+}
+
+
+
+

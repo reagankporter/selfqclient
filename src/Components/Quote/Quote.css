@@ -1,0 +1,22 @@
+
+.Quote{
+    height: 200px;
+    width: 670px;
+    display: inline-block;
+    border: 2px solid #7eb1a8;
+    border-radius: 20px;
+    
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.quoteb{
+    margin: 1em;
+    border: 2px solid #7eb1a8;
+    height: 30px;
+    width: 150px;
+    background-color: #ead292;
+    color: #7eb1a8;
+    cursor: pointer;
+    border-radius: 20px;
+    font-family: 'Abril Fatface', cursive;
+}

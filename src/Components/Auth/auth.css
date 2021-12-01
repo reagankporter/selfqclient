@@ -1,0 +1,53 @@
+body {
+    color: #de1b3e;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 20px;
+    background-image: url("https://meshgradient.com/gallery/3.png");
+}
+
+.authinput {
+    border-radius: 20px;
+    background-color:#7eb1a8;
+    border: none;
+    height: 40px;
+    width: 300px;
+    text-indent: 5px;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    font-size: 25px;
+}
+
+.authinput:focus {
+    outline: none;
+    background-color: grey;
+    color: white;
+}
+
+.authbutton {
+    margin: 1em;
+    border: 2px solid #7eb1a8;
+    height: 50px;
+    width: 200px;
+    background-color: #ead292;
+    color: #7eb1a8;
+    cursor: pointer;
+    border-radius: 20px;
+    font-family: 'Abril Fatface', cursive;
+
+}
+
+.authbutton:focus {
+    outline:#7eb1a8;
+}
+
+.authform{
+    height: 550px;
+    width: 500px;
+    display: inline-block;
+    border: 2px solid #ead292;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+
+
